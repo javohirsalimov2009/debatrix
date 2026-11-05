@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme { --font-sans: Manrope, system-ui, sans-serif; --font-display: Fraunces, Georgia, serif;
+  --color-ink: #0B1220; --color-card: #172033; --color-line: #263250; --color-accent: #6366F1; --color-pro: #22C55E; --color-mute: #9CA3AF; }
+body { background: #0B1220; color: #F9FAFB; font-family: var(--font-sans); }
+:focus-visible { outline: 2px solid #6366F1; outline-offset: 2px; }
+.btn { @apply rounded-md bg-accent px-5 py-2.5 font-bold text-white transition hover:brightness-110 disabled:opacity-50; }
+.btn-ghost { @apply rounded-md border border-line px-5 py-2.5 font-medium text-white transition hover:bg-card; }
+.input { @apply w-full rounded-md border border-line bg-ink px-3 py-2.5 text-white; }
+.panel { @apply rounded-md border border-line bg-card p-5; }
